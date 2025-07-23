@@ -296,7 +296,7 @@ const sampleWorkOrders = [
 
 // --- MAIN APP COMPONENT ---
 
-const App = () => {
+const AppContent = () => {
     const { wallet, connect, disconnect, isLoading: isWalletLoading } = useWallet();
     const { contractData, loadContractData, isLoadingContract } = useContractData(wallet);
     const { showNotification, askConfirmation } = useNotifier();
@@ -965,15 +965,15 @@ const WorkOrderDetailsModal = ({ workOrder, onClose, onApproveAndTokenize, isLoa
 
 const Footer = () => (
     <footer className="text-center py-4 border-t border-gray-700">
-        <p className="text-gray-500 text-sm">Powered by Service Coin</p>
+        <p className="text-gray-500 text-sm">Powered by Service Coin v1.1</p>
     </footer>
 );
 
 
-const BlueWhiteWorkYieldPlatform = () => (
+const App = () => (
     <NotificationProvider>
-        <App />
+        <AppContent />
     </NotificationProvider>
 );
 
-export default BlueWhiteWorkYieldPlatform;
+export default App;
