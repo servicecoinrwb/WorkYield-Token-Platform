@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WorkYield-Token-Platform/static/css/main.81bd21ce.css",
-    "main.js": "/WorkYield-Token-Platform/static/js/main.ada45f16.js",
+    "main.js": "/WorkYield-Token-Platform/static/js/main.d415fad2.js",
     "index.html": "/WorkYield-Token-Platform/index.html",
     "main.81bd21ce.css.map": "/WorkYield-Token-Platform/static/css/main.81bd21ce.css.map",
-    "main.ada45f16.js.map": "/WorkYield-Token-Platform/static/js/main.ada45f16.js.map"
+    "main.d415fad2.js.map": "/WorkYield-Token-Platform/static/js/main.d415fad2.js.map"
   },
   "entrypoints": [
     "static/css/main.81bd21ce.css",
-    "static/js/main.ada45f16.js"
+    "static/js/main.d415fad2.js"
   ]
 }
