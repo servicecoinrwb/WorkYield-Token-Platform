@@ -429,7 +429,7 @@ const App = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-900 font-sans text-gray-200">
+        <div className="min-h-screen bg-gray-900 font-sans text-gray-200 flex flex-col">
             <Header 
                 wallet={wallet} 
                 isLoading={isLoading}
@@ -437,7 +437,7 @@ const App = () => {
                 onDisconnect={disconnect}
                 onShowSettings={() => setShowSettings(true)}
             />
-            <main className="px-8 py-8 relative z-10">
+            <main className="px-8 py-8 relative z-10 flex-grow">
                 <DashboardMetrics 
                     wallet={wallet}
                     contractData={contractData}
@@ -464,6 +464,8 @@ const App = () => {
                 />
             </main>
             
+            <Footer />
+
             {showCreateModal && (
                 <CreateWorkOrderModal
                     clients={clients}
@@ -960,6 +962,13 @@ const WorkOrderDetailsModal = ({ workOrder, onClose, onApproveAndTokenize, isLoa
         </Modal>
     );
 };
+
+const Footer = () => (
+    <footer className="text-center py-4 border-t border-gray-700">
+        <p className="text-gray-500 text-sm">Powered by Service Coin</p>
+    </footer>
+);
+
 
 const BlueWhiteWorkYieldPlatform = () => (
     <NotificationProvider>
